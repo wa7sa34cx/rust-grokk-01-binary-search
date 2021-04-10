@@ -1,17 +1,13 @@
 use std::cmp::Ordering;
 
 fn main() {
-    // searchable list
+    // list of numbers
     let list = [1, 3, 5, 7, 9, 11, 13, 18, 19, 20, 21, 31, 55, 70, 82, 99];
+    // searchable value
     let item = 70;
-
-    // println!("The index of {} is {}", item, binary_search(list, item));
 
     let mut low = 0;
     let mut high = list.len() - 1;
-    // let mut mid = (low + high) / 2;
-
-    // println!("{}", high);
 
     while low <= high {
         let mid = (low + high) / 2;
